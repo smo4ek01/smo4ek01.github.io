@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:locale" content="en" />
-    <meta property="og:title" content="sevcator" />
-    <meta property="og:description" content=";)" />
-    <meta property="og:image" content="https://sevcator.github.io/materials/avatar.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="en"/>
+    <meta property="og:title" content="sevcator"/>
+    <meta property="og:description" content=";)"/>
+    <meta property="og:image" content="https://sevcator.github.io/materials/avatar.png"/>
     <title>sevcator</title>
-    <link rel="icon" href="materials/website.ico" type="image/x-icon" />
+    <link rel="icon" href="materials/website.ico" type="image/x-icon"/>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -80,12 +80,7 @@
             z-index: 2;
             transition: background-color 0.3s, border 0.3s;
         }
-        .button img, .copy-button img {
-            width: 20px;
-            height: 20px;
-            margin-right: 8px;
-        }
-        .button2 img {
+        .button img, .button2 img, .copy-button img {
             width: 20px;
             height: 20px;
             margin-right: 8px;
@@ -94,7 +89,7 @@
             background-color: rgba(255, 255, 255, 0.4);
             border: 1px solid rgba(255, 255, 255, 0.7);
         }
-        .button:focus, .button2:hover, .copy-button:focus {
+        .button:focus, .copy-button:focus {
             outline: none;
         }
         .bio-expanded {
@@ -134,14 +129,6 @@
                 font-size: 28px;
                 padding: 5px 13px;
             }
-            .button img, .copy-button img {
-                width: 20px;
-                height: 20px;
-            }
-            .button2 img {
-                width: 20px;
-                height: 20px;
-            }
             .button-container {
                 flex-direction: column;
                 gap: 4px;
@@ -162,48 +149,39 @@
                 font-size: 24px;
                 padding: 5px 13px;
             }
-            .button img, .copy-button img {
-                width: 20px;
-                height: 20px;
-            }
-            .button2 img {
-                width: 20px;
-                height: 20px;
-            }
         }
     </style>
 </head>
 <body>
-    <img src="materials\avatar.png" alt="Avatar" class="avatar" />
+    <img src="materials/avatar.png" alt="Avatar" class="avatar">
     <div class="name">sevcator</div>
     <div class="bio-container">
         <div class="bio">
             Toy. Current my time: <span id="time"></span>
-            <br />
-            <br />
+            <br><br>
             <a href="#" class="expand-bio">More...</a>
             <span class="bio-expanded">From Russian Federation, Male
 
-Happy Sugar Life, Touhou Project &lt;3 </span>
+Happy Sugar Life, Touhou Project &lt;3</span>
         </div>
         <div class="button-container">
             <a href="https://t.me/smo4ek_live" class="button2">
-                <img src="materials\telegram.png" alt="[translate:Telegram]" />[translate:t.me/smo4ek_live]
+                <img src="materials/telegram.png" alt="Telegram">t.me/smo4ek_live
             </a>
             <a href="https://www.youtube.com/@smo4ek-u7h9s" class="button">
-                <img src="materials\youtube.png" alt="[translate:YouTube]" />[translate:YouTube]
+                <img src="materials/youtube.png" alt="YouTube">YouTube
             </a>
             <a class="copy-button" onclick="copyToClipboard('smo4ek#3212')">
-                <img src="materials\discord.png" alt="[translate:Discord]" />[translate:Discord]
+                <img src="materials/discord.png" alt="Discord">Discord
             </a>
             <a href="https://tiktok.com/@smo4ek01" class="button2">
-                <img src="materials\tiktok.png" alt="[translate:TikTok]" />[translate:smo4ek01]
-            </a>
+                <img src="materials/tiktok.png" alt="TikTok">smo4ek01
+            </a>   
             <a href="https://github.com/smo4ek01" class="button2">
-                <img src="materials\github.png" alt="[translate:GitHub]" />[translate:GitHub]
+                <img src="materials/github.png" alt="GitHub">GitHub
             </a>
             <a href="https://steamcommunity.com/profiles/76561198777381803/" class="button2">
-                <img src="materials\steam.png" alt="[translate:Steam]" />[translate:Steam]
+                <img src="materials/steam.png" alt="Steam">Steam
             </a>
         </div>
     </div>
@@ -217,7 +195,7 @@ Happy Sugar Life, Touhou Project &lt;3 </span>
             bioExpanded.classList.toggle('show');
             expandBioButton.textContent = bioExpanded.classList.contains('show') ? 'Minimize' : 'More...';
         });
-
+        
         function copyToClipboard(text) {
             const tempInput = document.createElement('input');
             tempInput.value = text;
